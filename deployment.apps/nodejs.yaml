@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: node-js
-          image: 337909768220.dkr.ecr.ap-south-1.amazonaws.com/sridhar:main-4981fddb11925fff6d637a10a6f561e3902d54ff
+          image: 337909768220.dkr.ecr.ap-south-1.amazonaws.com/sridhar:main-0600658395a37ca22f6f7597269b866fb9d3d6a7
           ports:
             - containerPort: 3000
               protocol: TCP
