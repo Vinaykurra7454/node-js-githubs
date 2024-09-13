@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-js
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: node-js
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: node-js
+    spec:
+      containers:
+        - name: node-js
+          image: 337909768220.dkr.ecr.ap-south-1.amazonaws.com/sridhar:latest
+          ports:
+            - containerPort: 3000
+              protocol: TCP
